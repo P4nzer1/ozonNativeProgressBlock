@@ -40,14 +40,26 @@ body, html {
     stroke-width: 4;
     r: 16;
 }
-  
+
+.hidden {
+    display: none;
+}
+
 .progress-ring-bg {
     stroke: #ffffff;
 }
   
-.progress-ring-value {
-    stroke: #007bff;
-    stroke-linecap: round;
+.animate .progress-ring-value {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 .toggle {
