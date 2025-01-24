@@ -1,6 +1,9 @@
-export function Progress({ value }) {
+export function Progress({ value, isAnimated, isHidden }) {
+    const hiddenClass = isHidden ? "hidden" : "";
+    const animationClass = isAnimated ? "animate" : "";
+  
     return `
-      <div class="progress">
+      <div class="progress ${hiddenClass} ${animationClass}">
         <svg viewBox="0 0 36 36" class="progress-ring">
           <circle class="progress-ring-bg" cx="18" cy="18" r="16"></circle>
           <circle class="progress-ring-value" 
