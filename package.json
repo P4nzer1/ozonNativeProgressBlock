@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "parcel src/index.html",
-    "deploy": "gh-pages -d dist."
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "name": "ozon_native_progress_block",
   "version": "1.0.0",
