@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "start": "vite"
   },
   "name": "ozon_native_progress_block",
   "version": "1.0.0",
