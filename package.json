@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "vite"
+    "start": "vite", 
+    "build": "vite build", 
+    "deploy": "npm run build && gh-pages -d dist" 
   },
   "name": "ozon_native_progress_block",
   "version": "1.0.0",
