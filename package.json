@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "mkdir -p dist && cp -r src/* dist/",
+    "build": "node copy-files.js",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "name": "ozon_native_progress_block",
