@@ -1,0 +1,22 @@
+input {
+    width: 2rem;
+    height: 1.25rem;
+    margin-right: 1rem;
+    padding: 1px 1.5px 0 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0.8rem;
+    border: 1px solid #000000;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input {
+    display: flex;
+}
+
+.input input::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
