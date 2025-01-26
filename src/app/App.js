@@ -1,4 +1,4 @@
-import { Progress } from "../components/Progress/Progress";
+import { Progress } from "../components/Progress/Progress.js";
 import { Input } from "../components/Input/Input.js";
 import { Toggle } from "../components/Toggle/Toggle.js";
 

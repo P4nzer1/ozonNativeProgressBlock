@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "node copy-files.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "start": "vite",
+    "build": "vite build"
   },
   "name": "ozon_native_progress_block",
   "version": "1.0.0",
@@ -10,5 +9,8 @@
   "dependencies": {
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://P4nzer1.github.io/ozonNativeProgressBlock"
+  "homepage": "https://P4nzer1.github.io/ozonNativeProgressBlock",
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
 }
