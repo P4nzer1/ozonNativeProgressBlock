@@ -1,3 +1,5 @@
-import App from '../src/app/App.js';
+import App from "../src/app/App.js";
 
-document.getElementById('root').innerHTML = App();
+document.addEventListener("DOMContentLoaded", () => {
+    App("root");
+});

@@ -1,0 +1,45 @@
+.progress_ring {
+    width: 100%;
+    height: 100%;
+    max-width: 130px; 
+    max-height: 130px;
+    transform: rotate(-90deg);
+}
+
+.progress_ring-bg {
+    stroke: #e2e2e2;
+}
+
+.progress_ring-value {
+    stroke: #0481CB;
+    stroke-linecap: butt;
+    transform-origin: center;
+}
+
+.progress_ring-bg,
+.progress_ring-value {
+    fill: none;
+    stroke-width: 4;
+    r: 16;
+    transition: stroke-dasharray 0.5s ease;
+}
+
+.animate .progress_ring-value {
+    animation: rotate 2s linear infinite;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
