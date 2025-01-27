@@ -50,8 +50,7 @@ ozonNativeProgressBlock/
 │   ├── components/
 │   │   ├── Progress/
 │   │   ├── Input/
-│   │   ├── Toggle/
-│   └── app/
+│   │   ├── Toggle/   
 │   │── styles/
 │   │──index.js
 │   │──index.html     # Основной HTML файл
