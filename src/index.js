@@ -1,4 +1,4 @@
-import initApp from "../src/app/app.js";
+import initApp from "../app/app.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     initApp("root");
