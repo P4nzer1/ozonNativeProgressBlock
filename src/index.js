@@ -1,5 +1,5 @@
-import App from "../src/app/App.js";
+import initApp from "../src/app/app.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    App("root");
+    initApp("root");
 });

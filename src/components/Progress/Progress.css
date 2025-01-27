@@ -7,11 +7,11 @@
 }
 
 .progress_ring-bg {
-    stroke: #e2e2e2;
+    stroke: var(--grey);
 }
 
 .progress_ring-value {
-    stroke: #0481CB;
+    stroke: var(--blue);
     stroke-linecap: butt;
     transform-origin: center;
 }

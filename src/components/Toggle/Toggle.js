@@ -1,7 +1,7 @@
 export class Toggle {
-  constructor(element, label, onChange) {
+  constructor(element, labelText = 'Value', onChange) {
     this.element = element;
-    this.label = label;
+    this.labelText = labelText;
     this.onChange = onChange;
     this.checked = false;
     this.init();
@@ -12,7 +12,7 @@ export class Toggle {
       <label class="toggle">
         <input type="checkbox" />
         <span class="slider"></span>
-        <span class="label">${this.label}</span>
+        <span class="label">${this.labelText}</span>
       </label>
     `;
     
