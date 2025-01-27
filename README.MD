@@ -40,28 +40,6 @@ npm install
 npm start
 ```
 
-## 🚀 Деплой
-
-Процесс деплоя осуществляется с ветки fix-deploy. Для этого выполните следующие шаги:
-
-1. Перейдите на ветку fix-deploy:
-
-```bash
-git checkout fix-deploy
-```
-
-2. Соберите проект:
-
-```bash
-npm run build
-```
-
-3. Разверните проект на GitHub Pages:
-
-```bash
-npm run deploy
-```
-
 Проект будет доступен по адресу: https://P4nzer1.github.io/ozonNativeProgressBlock
 
 ## 🗂 Структура проекта
@@ -88,6 +66,19 @@ ozonNativeProgressBlock/
 
 ## 📞 Контакты
 
-**Автор**: P4nzer1
+**Автор**: Никита
 
-**Email**: nikitka-smirnov-2013@mail.ru
+**Телефон**: 
+```csharp
++79198182827
+```
+
+**Email**:
+```csharp
+nikitka-smirnov-2013@mail.ru
+```
+
+**Telegram**:
+```csharp
+@P4NZ3RKAWASAKI
+```

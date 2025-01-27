@@ -6,7 +6,7 @@
 .slider {
     width: 2rem;
     height: 1.25rem;
-    background-color: #e2e2e2;
+    background-color: var(--grey);
     border-radius: 1rem;
     margin-right: 1rem;
     cursor: pointer;
@@ -20,16 +20,16 @@
     left: 0.125rem;
     width: 1rem;
     height: 1rem;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 0.5rem;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 input[type='checkbox'] {
     display: none;
 }
 input[type='checkbox']:checked + .slider {
-    background-color: #0481CB;
+    background-color: var(--blue);
 }
 input[type='checkbox']:checked + .slider::before {
     left: 0.9rem;

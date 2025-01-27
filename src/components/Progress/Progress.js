@@ -38,14 +38,7 @@ export class Progress {
 
     progressValue.style.strokeDasharray = `${dashArrayValue} ${2 * Math.PI * 16}`;
 
-    if (this.value > 0 && this.isAnimated) {
-      this.element.classList.add("animate");
-    } else {
-      this.element.classList.remove("animate");
-    }
-    
-    this.element.classList.toggle("animate", this.isAnimated);
+    this.element.classList.toggle("animate", this.isAnimated && this.value > 0 && this.value < 100 && !this.isHidden);
     this.element.classList.toggle("hidden", this.isHidden);
-
   }
 }

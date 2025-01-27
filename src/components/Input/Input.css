@@ -6,7 +6,7 @@ input {
     box-sizing: border-box;
     position: relative;
     font-size: 0.8rem;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     outline: none;
     text-align: center;
     cursor: pointer;

@@ -1,35 +1,36 @@
 export class Input {
-  constructor(element, onChange, progress) {
+  constructor(element, onChange, minValue = 0, maxValue = 100, labelText = 'Value') {
     this.element = element;
     this.onChange = onChange;
-    this.progress = progress;
+    this.minValue = minValue;
+    this.maxValue = maxValue;
+    this.labelText = labelText;
     this.init();
   }
 
   resetInput(e) {
     e.target.value = '';
-    this.progress.setProgress(0); 
     this.onChange(0);
   }
 
   init() {
     this.element.innerHTML = `
       <label class="input">
-        <input  type="number" min="0" max="100" value="0" />
-        <span>Value</span>
+        <input type="number" min="${this.minValue}" max="${this.maxValue}" value="${this.labelText}" />
+        <span>${this.labelText}</span>
       </label>
     `;
-  
+
     this.element.querySelector("input").addEventListener("input", (e) => {
-      const reg = /^(100|[0-9]?[0-9])$/;
       const value = e.target.value;
-      
-      if (value === '' || !reg.test(value) || parseInt(value, 10) > 100) {
+      const numValue = parseInt(value, 10);
+
+      if (value === '' || isNaN(numValue) || numValue < this.minValue) {
         this.resetInput(e);
       } else {
-        const numericValue = parseInt(value, 10);
-        this.onChange(numericValue);
-        this.progress.setProgress(numericValue);
+        const finalValue = Math.min(numValue, this.maxValue);
+        e.target.value = finalValue;
+        this.onChange(finalValue);
       }
     });
   }
