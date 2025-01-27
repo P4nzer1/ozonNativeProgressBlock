@@ -68,8 +68,17 @@ ozonNativeProgressBlock/
 
 **Автор**: Никита
 
-**Телефон**: ```+79198182827```
+**Телефон**: 
+```csharp
++79198182827
+```
 
-**Email**: nikitka-smirnov-2013@mail.ru
+**Email**:
+```csharp
+nikitka-smirnov-2013@mail.ru
+```
 
-**Telegram**: @P4NZ3RKAWASAKI
+**Telegram**:
+```csharp
+@P4NZ3RKAWASAKI
+```
