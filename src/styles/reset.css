@@ -1,5 +1,5 @@
 * {
-    -webkit-tap-highlight-color: var(--black);
+    -webkit-tap-highlight-color: transparent;
     margin: 0;
     padding: 0;
 }
